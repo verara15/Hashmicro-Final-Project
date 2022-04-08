@@ -1,0 +1,25 @@
+ó
+#‡›[c           @   sQ   d  d l  m Z m Z m Z m Z m Z d  d l Z d e j  f d „  ƒ  YZ d S(   iÿÿÿÿ(   t   apit   fieldst   modelst
+   exceptionst   _Nt	   MyServicec           B   sU  e  Z d  Z d Z e j d d ƒ Z e j d d ƒ Z  e j d d ƒ Z e j	 d d d  e
+ ƒ Z
+ e j d d ƒ Z
+ e j d d	 d  e j j ƒ Z e j d d
+ d  e j j ƒ Z e j d d
+ ƒ Z e j d d ƒ Z e j d# d$ d% g d  d
+ d d ƒZ e j d& d' d( d) d* d+ g d  d ƒZ e j d  „  ƒ Z e j d! „  ƒ Z e j d" „  ƒ Z RS(,   s
+   my.servicet    Servicet   strings   Nama Pelanggans
+   Nama Mesins   Serial Number Mesint    Garansit    defaults   Keluhan Pelanggans   Tanggal Services   Perkiraan Selesais   Tanggal Selesais
+   Tanggal Ambilt   normalt   Normalt   quickt   Kilatt   extras
+   Super Kilats   Tipe Servicet   draftt   Draftt
+   in_progresss
+   In Progresst   stuckt   Stuckt   cancelt	   Cancelledt   finisht   Finisht   takes   Take by Userc         C   s)   x" |  D] } | j  i d d 6ƒ q  Wd  S(   NR   t   state(   t   write(   t   selft   record(    (    s1   /odoo/blog/module_odoo_bag_enam/models/service.pyt   update_form_to_in_progress!   s    
+c         C   s)   x" |  D] } | j  i d d 6ƒ q  Wd  S(   NR   R   (   R   (   R   R   (    (    s1   /odoo/blog/module_odoo_bag_enam/models/service.pyt   update_form_to_cancel'   s    
+c         C   s9   x2 |  D]* } | j  i d d 6t j j ƒ  d 6ƒ q  Wd  S(   NR   R   t
+   finish_date(   R   t   datetimet   now(   R   R   (    (    s1   /odoo/blog/module_odoo_bag_enam/models/service.pyt   update_form_to_finish-   s    
+(   s   normals   Normal(   R   R
+   (   s   extras
+   Super Kilat(   s   drafts   Draft(   s
+   in_progresss
+   In Progress(   R   R   (   s   cancels	   Cancelled(   s   finishR   (   R   s   Take by User(   t   __name__t
+   __module__t   _namet   _descriptionR   t   Chart   customert   devicet	   device_snt    Booleant   Falset   is_guaranteet   Textt
+   descriptiont   DatetimeR!   t   service_datet   scheduled_dateR   t   take_by_customer_datet	   Selectiont   type_of_serviceR   R    t   multiR   R   R"   (    (    (    s1   /odoo/blog/module_odoo_bag_enam/models/service.pyR      s6   			(	   t   odooR    R   R   R   R   R    t   ModelR   (    (    (    s1   /odoo/blog/module_odoo_bag_enam/models/service.pyt   <module>   s   (
